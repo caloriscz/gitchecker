@@ -1,14 +1,16 @@
 <?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 
-require '../src/GitChecker/GitChecker.php';
+require './src/GitChecker/GitChecker.php';
 
 final class GitCheckerTest extends TestCase
 {
-    public function testPushAndPop(): void
+    public function testNotNull(): void
     {
         $gitChecker = new GitChecker();
 
-        self::assertSame(0, 0);
+        self::assertNotNull($gitChecker->getSnapshot());
+        self::assertNotNull($gitChecker->getBranch());
+        self::assertNotNull($gitChecker->getDate());
     }
 }
