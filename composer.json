@@ -1,0 +1,23 @@
+{
+  "name": "caloriscz/gitchecker",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "caloriscz",
+      "email": "caloris@caloris.cz"
+    }
+  ],
+  "description": "Check for git snapshot in .git directory",
+  "autoload": {
+    "psr-4": {
+      "GitChecker\\": "src/GitChecker/"
+    }
+  },
+  "require": {
+    "php": ">= 7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}
